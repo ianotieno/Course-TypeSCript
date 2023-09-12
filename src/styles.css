@@ -81,7 +81,7 @@ h2 {
   }
   /* Header style */
 h1 {
-    background-color: #131212;
+    background-color: #080808;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -90,6 +90,12 @@ h1 {
     font-size: 36px;
     margin: 0;
   }
-  
+  h3{
+    text-align: center;
+    
+    margin: 10px 0;
+    font-size: 28px;
+    margin: 0;
+  }
   
   
