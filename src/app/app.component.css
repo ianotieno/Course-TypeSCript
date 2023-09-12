@@ -1,0 +1,67 @@
+/* courses.component.css */
+
+/* Style for the course list */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  ul.courses {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul.courses li {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  ul.courses li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  ul.courses .badge {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Style for the course details section */
+  h2.course-details {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .course-details span {
+    font-weight: bold;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style for selected course */
+  li.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  li.selected:hover {
+    background-color: #0056b3;
+  }
+  
