@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+/* courses.component.css */
+
+/* Style for the course list */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  ul.courses {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul.courses li {
+    background-color: #f8f8f8;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  ul.courses li:hover {
+    background-color: #ffcc80;
+    border-color: #ff9900;
+  }
+  
+  ul.courses .badge {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Style for the course details section */
+  h2.course-details {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .course-details span {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Style for selected course */
+  li.selected {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #0056b3;
+  }
+  
+  li.selected:hover {
+    background-color: #0056b3;
+    border-color: #003d99;
+  }
+  /* Header style */
+h1 {
+    background-color: #131212;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  
+  
