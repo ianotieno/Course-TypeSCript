@@ -1,6 +1,8 @@
+import { CourseService } from './../course.service';
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../course';
 import { COURSE } from '../mock-courses';
+
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
@@ -9,11 +11,16 @@ import { COURSE } from '../mock-courses';
 export class CoursesComponent implements OnInit{
   courses: Course[] = COURSE
   selectedCourse!: Course;
-constructor(){}
+constructor(private CourseService:CourseService){}
  ngOnInit(): void {
    
  }
  onSelect(course:Course):void{
   this.selectedCourse=course
+ }
+ getCourses():void{
+  this.CourseService.getCourses()
+    .subscribe(courses=> this.courses);
+  
  }
 }
