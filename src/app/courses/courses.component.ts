@@ -13,14 +13,14 @@ export class CoursesComponent implements OnInit{
   selectedCourse!: Course;
 constructor(private CourseService:CourseService){}
  ngOnInit(): void {
-   
+   this.getCourses()
  }
  onSelect(course:Course):void{
   this.selectedCourse=course
  }
  getCourses():void{
   this.CourseService.getCourses()
-    .subscribe(courses=> this.courses);
+    .subscribe(courses=> this.courses=courses);
   
  }
 }
