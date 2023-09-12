@@ -1,0 +1,42 @@
+/* courses.component.css */
+
+/* Style for the top courses section */
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Style for each course item */
+  .col-1-4 {
+    flex: 1;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .module.course {
+    background-color: #f8f8f8;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .module.course:hover {
+    background-color: #ffcc80;
+    border-color: #ff9900;
+  }
+  
+  .module.course h4 {
+    font-size: 18px;
+    margin: 0;
+    padding: 5px;
+  }
+  
