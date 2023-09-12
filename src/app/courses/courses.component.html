@@ -1,3 +1,5 @@
 <h2>{{course.name | uppercase}}</h2>
 <div><span>id:</span>{{course.id}}</div>
-<div><span>name:</span>{{course.name}}</div>
+<div><label>name:
+    <input [(ngModel)]="course.name" placeholder="course name">
+</label></div>
