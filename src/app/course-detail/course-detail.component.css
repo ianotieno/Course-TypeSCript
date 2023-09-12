@@ -1,0 +1,25 @@
+/* course-detail.component.css */
+
+/* Style for the course details section */
+.detail {
+    background-color: #f8f8f8; /* Background color for the course details section */
+    border: 2px solid #ddd; /* Border for the section */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    margin-top: 20px; /* Spacing from the previous element */
+    font-size: 16px; /* Font size for the content */
+  }
+  
+  /* Style for the span elements */
+  .detail {
+    font-weight: bold; /* Bold text for the labels */
+    margin-right: 10px; /* Spacing between the label and the value */
+  }
+  
+  /* Style for the unit and course name */
+  h2 {
+    font-size: 24px; /* Larger font size for the course name */
+    color: #333; /* Text color */
+    margin-bottom: 10px; /* Spacing below the course name */
+  }
+  
