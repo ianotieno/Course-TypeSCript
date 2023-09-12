@@ -7,9 +7,13 @@ import { COURSE } from '../mock-courses';
   styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent implements OnInit{
-  courses: Course[] = COURSE;
+  courses: Course[] = COURSE
+  selectedCourse!: Course;
 constructor(){}
  ngOnInit(): void {
    
+ }
+ onSelect(course:Course):void{
+  this.selectedCourse=course
  }
 }
