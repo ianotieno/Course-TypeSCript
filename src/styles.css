@@ -71,7 +71,7 @@ h2 {
   /* Style for selected course */
   li.selected {
     background-color: #007bff;
-    color: #fff;
+    color: #ee9207;
     border-color: #0056b3;
   }
   
