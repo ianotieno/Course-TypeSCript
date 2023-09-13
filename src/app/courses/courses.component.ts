@@ -11,7 +11,7 @@ import { COURSE } from '../mock-courses';
 export class CoursesComponent implements OnInit{
   courses: Course[] = COURSE
   selectedCourse!: Course;
-constructor(private CourseService:CourseService){}
+constructor(private CourseService:CourseService,){}
  ngOnInit(): void {
    this.getCourses()
  }
@@ -23,4 +23,5 @@ constructor(private CourseService:CourseService){}
     .subscribe(courses=> this.courses=courses);
   
  }
+ 
 }
