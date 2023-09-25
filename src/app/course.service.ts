@@ -1,20 +1,18 @@
-import { MessagesService } from './messages.service';
+
 import { Injectable } from '@angular/core';
-import { Course } from './course';
-import { COURSE } from './mock-courses';
-import { Observable,of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Observable} from 'rxjs';
+import { CourseInterface } from './course';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CourseService {
  
-
-  constructor(private MessagesService:MessagesService) {
+private _url:string="/assets/data/course.json"
+  constructor(private http: HttpClient) { }
+   getCourses():Observable<CourseInterface[]>{
+   return this.http.get<CourseInterface[]>(this._url)
     
-   }
-   getCourses():Observable<Course[]>{
-   this.MessagesService.add('CourseService: fetch course')
-    return of (COURSE)
   }
 }

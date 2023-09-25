@@ -6,10 +6,10 @@ import { CourseDetailComponent } from './course-detail/course-detail.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: './dashboard',pathMatch: 'full'},
+  
   {path: 'courses', component:CoursesComponent},
-  {path:'dashboard', component:DashboardComponent},
-  {path:'dashboard',component:CourseDetailComponent}
+  {path:'', component:DashboardComponent},
+  {path:'course-detail/:id',component:CourseDetailComponent}
 
 ];
 
